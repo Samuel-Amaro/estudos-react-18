@@ -11,7 +11,7 @@ type PropsT = {
 
 export default function TaskList() {
   //le o contexto para obter tasks
-  const tasks = useTasks()
+  const tasks = useTasks();
 
   if (tasks) {
     return (
@@ -31,7 +31,7 @@ export default function TaskList() {
 function T({ task }: PropsT) {
   const [isEditing, setIsEditing] = useState(false);
   //para atualizar o state ler o contexto da dispatch function para obtela e chamala
-  const dispatch = useTaskDispatch()
+  const dispatch = useTaskDispatch();
 
   let taskContent;
   if (isEditing) {

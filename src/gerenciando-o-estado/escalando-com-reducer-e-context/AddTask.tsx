@@ -6,7 +6,7 @@ let nextId = 3;
 export default function AddTask() {
   const [text, setText] = useState("");
   //le o contexto e obtem a function para chamala
-  const dispatch = useTaskDispatch()
+  const dispatch = useTaskDispatch();
 
   return (
     <>

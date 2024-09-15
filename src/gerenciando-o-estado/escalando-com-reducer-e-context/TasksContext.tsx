@@ -30,10 +30,10 @@ export function TasksProvider({ children }: { children: React.ReactNode }) {
 //Funções como useTasks e useTasksDispatch são chamadas de Hooks Personalizados. Sua função é considerada um Hook personalizado se seu nome começar com use. Isso permite que você use outros Hooks, como useContext, dentro dela.
 // eslint-disable-next-line react-refresh/only-export-components
 export function useTasks() {
-    return useContext(TaskContext);
+  return useContext(TaskContext);
 }
 
 // eslint-disable-next-line react-refresh/only-export-components
 export function useTaskDispatch() {
-    return useContext(TasksDispatchContext)
+  return useContext(TasksDispatchContext);
 }
